@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu peso en otro planeta</title>
+</head>
+
+<body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distinto que en marte o júpiter</p>
+    <script>
+        var usuario = prompt("Ingrese su peso");
+        var planeta = parseInt(prompt("Elige el planeta\n1 es marte, 2 es jupiter"));
+        var peso = parseFloat(usuario);
+        var gTierra = 9.8;
+        var gMarte = 3.7;
+        var gJupiter = 24.8;
+        var pesoF;
+
+        if (planeta == 1) {
+            pesoF = (peso * gMarte) / gTierra;
+        } else if (planeta == 2) {
+            pesoF = (peso * gJupiter) / gTierra;
+        } else {
+            pesoF = 1000000000000000;
+        }
+        //parseInt() redondear un númerpo con muchos decimales
+        pesoF = (pesoF);
+        document.write("Tu peso en Marte es <strong>" + pesoF + " Kilos</strong>");
+    </script>
+</body>
+
+</html>

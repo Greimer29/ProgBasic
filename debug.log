@@ -1,0 +1,7 @@
+[1102/091715.123:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1102/091715.123:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1102/092715.168:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1102/092715.168:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1102/092715.168:ERROR:filesystem_win.cc(116)] GetFileAttributes C:\Users\GreimerKmón\AppData\Local\Google\Chrome\User Data\Crashpad\reports\8cff819a-f482-4cfe-8283-c9a7c1618edc.dmp: El sistema no puede encontrar el archivo especificado. (0x2)
+[1102/092715.168:ERROR:filesystem_win.cc(116)] GetFileAttributes C:\Users\GreimerKmón\AppData\Local\Google\Chrome\User Data\Crashpad\reports\9bf07a48-635d-4b43-864d-f9d55237fc48.dmp: El sistema no puede encontrar el archivo especificado. (0x2)
+[1102/092715.168:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)

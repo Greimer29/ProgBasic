@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso universal</title>
+</head>
+
+<body>
+    <h1>Deseas saber cuánto pesas en otros planetas</h1>
+    <p>En la tierra tu peso es diferente a como es en otros planetas</p>
+    <script>
+        var usuario = prompt("Ingrese su peso en la tierra");
+        var opción = parseInt(prompt("Ingrese El planeta del cuál desea saber su peso"));
+        var gMarte = 3.7;
+        var gTierra = 9.8;
+        var gJupiter = 24.8;
+        var Peso = parseFloat(usuario);
+        var pesoF;
+
+        if (opción == 1) {
+            pesoF = (Peso * gMarte) / gTierra;
+
+            pesoF = (pesoF);
+            document.write("Tu peso en Marte es " + pesoF + " Kilos");
+        } else if (opción == 2) {
+            pesoF = (Peso * gJupiter) / gTierra;
+
+            pesoF = (pesoF);
+            document.write("Tu peso en Júpiter es " + pesoF + " Kilos");
+        } else {
+            document.write("Tu peso en Kripton es " + 1000000000 + " Kilos")
+        }
+    </script>
+</body>
+
+</html>
