@@ -23,58 +23,16 @@ main .logo-wiki img {
 }
 
 main .principal-buscador {
-    width: 425px;
-    margin: 0 auto;
-    margin-bottom: 35px;
-}
-
-main .buscador {
-    width: 520px;
-    border: 1px solid #e7d4d4;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-family: 'Times New Roman';
+    border: 1px solid yellow;
 }
 
 main .principal-buscador input {
-    width: 345px;
-    height: 40px;
-    border: none;
-    outline: none;
-    font-size: 20px;
-}
-
-main .principal-buscador input:hover {
-    box-shadow: 10px 4px 10px #f5eeee;
-}
-
-main .principal-buscador a {
-    background-color: blue;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0b/Search_Icon.svg');
-    width: 80px;
-    height: 47px;
-    border: none;
-    outline-style: none;
-    cursor: pointer;
-}
-
-main .principal-buscador a:hover {
-    box-shadow: 0 4px 10px 0 #7e9af0;
-}
-
-main .principal-buscador button {
-    width: 38px;
-    height: 47px;
-    background-color: #e7dada;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-main .principal-buscador button:hover {
-    box-shadow: 0 4px 10px #bba3a3;
-    background-color: #f5eeee;
+    width: 100%;
+    border-width: 1px 0 1px 1px;
+    border-radius: 2px 0 0 2px;
+    padding: .8rem 9.6rem .8rem 1.2rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
 }
 
 footer {
