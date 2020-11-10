@@ -4,10 +4,39 @@ var boton = document.getElementById("boton");
 boton.addEventListener('click', dibujoPorClick);
 
 function dibujoPorClick() {
+    var lineas = xxx = parseInt(texto.value);
+    var l = 0;
+    var yi, xf;
+    var espacio = ancho / lineas;
 
-    var xxx = parseInt(texto.value);
+    /*
+    for(l = 0; l < lineas; l++){
+        yi = 10 * l;
+        xf = 10 *(l+1);
+        dibujarLinea("grey", 0, yi, xf, 300);
+    }
+    */
+
+    while (l < lineas) {
+        yi = espacio * l;
+        xf = espacio * (l + 1);
+        dibujarLinea("grey", 0, yi, xf, 300);
+        l = l + 1;
+    }
+
+    dibujarLinea("black", 1, 1, 1, 299);
+
+    function dibujarLinea(color, xini, yini, xfin, yfin) {
+        lienzo2.beginPath();
+        lienzo2.strokeStyle = color;
+        lienzo2.moveTo(xini, yini);
+        lienzo2.lineTo(xfin, yfin);
+        lienzo2.stroke();
+        lienzo2.closePath();
+    }
 }
 
+//La base, el primero.
 var d = document.getElementById('dibujito');
 var lienzo = d.getContext("2d");
 
@@ -29,7 +58,8 @@ function dibujar(color, xini, yini, xfin, yfin) {
 
 dibujar("red", 10, 300, 220, 10);
 
-//elmio
+
+//El mio.
 var can = document.getElementById("elmio");
 var hoja = can.getContext("2d");
 
@@ -58,46 +88,17 @@ for (let a = 0; a < limite; a++) {
     dele("blue", xini, 300, 300, yfin);
 }
 for (let a = 0; a < limite; a++) {
-    yini = 10 * a;
-    xfin = 10 * (a + 1);
-    dele("blue", 0, yini, xfin, 300);
+    yini = 300 - (10 * a);
+    xfin = 300 - (10 * a);
+    dele("blue", 300, yini, xfin, 0);
 }
 for (let a = 0; a < limite; a++) {
-    yini = 10 * a;
-    xfin = 10 * (a + 1);
-    dele("blue", 0, yini, xfin, 300);
+    let yfin = 10 * (a + 1)
+    let xini = 300 - (10 * a);
+    dele("blue", xini, 0, 0, yfin);
 }
 
 //el suyo
 var f = document.getElementById("elsuyo");
 var lienzo2 = f.getContext("2d");
-
-var lineas = 30;
-var l = 0;
-var yi, xf;
-
-/*
-for(l = 0; l < lineas; l++){
-    yi = 10 * l;
-    xf = 10 *(l+1);
-    dibujarLinea("grey", 0, yi, xf, 300);
-}
-*/
-
-while (l < lineas) {
-    yi = 10 * l;
-    xf = 10 * (l + 1);
-    dibujarLinea("grey", 0, yi, xf, 300);
-    l = l + 1;
-}
-
-dibujarLinea("black", 1, 1, 1, 299);
-
-function dibujarLinea(color, xini, yini, xfin, yfin) {
-    lienzo2.beginPath();
-    lienzo2.strokeStyle = color;
-    lienzo2.moveTo(xini, yini);
-    lienzo2.lineTo(xfin, yfin);
-    lienzo2.stroke();
-    lienzo2.closePath();
-}
+var ancho = d.width;
